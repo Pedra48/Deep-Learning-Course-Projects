@@ -6,3 +6,6 @@ venv/
 .env
 .env.*
 !.env.example
+
+# Generated experiment results and model parameters
+outputs/

@@ -1,0 +1,26 @@
+# Dataset sizes
+train_num: 1000
+eval_num: 200
+test_num: 200
+batch_size: 64
+
+# Model: the current implementation has n_layers + 1 hidden layers
+n_hidden: 64
+n_layers: 2
+
+# Training (write the learning rate as a decimal so it is parsed as a number)
+lr: 0.001
+epoch: 300
+
+# StepLR: multiply the learning rate by gamma every step_size epochs
+step_size: 100
+gamma: 0.5
+
+# Checkpoint interval in epochs
+save_epoch: 100
+
+# Require the local NVIDIA GPU for this run
+device: cuda
+seed: 42
+log_every: 25
+output_dir: outputs/exp1_gpu_20261027
